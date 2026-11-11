@@ -21,7 +21,7 @@ is optional.
 
 ## License
 
-MIT. The preview image shows art by SirVan from
+MIT. The preview and the images in `Workshop/` show art by SirVan from
 [Van's Retexture : Organ jars](https://steamcommunity.com/sharedfiles/filedetails/?id=3541295970) (CC BY 4.0) and by
 AUTOMATIC from [Bionic icons](https://steamcommunity.com/sharedfiles/filedetails/?id=1677616980) (MIT). It belongs to
 their authors and isn't covered by this license.
