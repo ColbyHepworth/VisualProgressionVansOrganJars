@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Visual Progression: Van's Organ Jars</name>
+  <author>Groovy</author>
+  <packageId>groovy.visualprogression.vansorganjars</packageId>
+  <modVersion>1.0</modVersion>
+  <url>https://github.com/ColbyHepworth/VisualProgressionVansOrganJars</url>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Organs your colony harvests before it reaches the industrial age are Van's organ jars. Organs harvested after are the game's organ box. Old jars keep their look until they're used, so the change happens slowly. With Expanded Prosthetics and Organ Engineering - Forked, its stomach, eyes, noses, ears and jaws change the same way. Its arms and legs can't be harvested, so they look like any organ you didn't harvest.
+
+Something has to raise your colony's tech level as you play, such as Vanilla Factions Expanded - Tribals. Without one, your colony stays at the age it starts in, so its organs never change.
+
+This mod adds no item art. It uses Van's images and the game's own. Organs nobody harvested, such as loot and quest rewards, are the game's box. Organs that traders sell, and that other factions' pawns carry, follow that faction's age. A retexture or upscale of the game's organ box shows wherever the box does.
+
+Safe to add to an existing save: Organs already harvested become the game's box, and organs harvested after get the look of your colony's age.
+
+Safe to remove: Organs go back to Van's jars.
+
+Preview art: SirVan's Van's Retexture : Organ jars (CC BY 4.0) and AUTOMATIC's Bionic icons (MIT).</description>
+  <modDependencies>
+    <li>
+      <packageId>groovy.visualprogression.framework</packageId>
+      <displayName>Visual Progression Framework</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3834891951</steamWorkshopUrl>
+      <downloadUrl>https://github.com/ColbyHepworth/VisualProgressionFramework</downloadUrl>
+    </li>
+    <li>
+      <packageId>sirvan.organretexture</packageId>
+      <displayName>Van's Retexture : Organ jars</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3541295970</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>groovy.visualprogression.framework</li>
+    <li>sirvan.organretexture</li>
+    <li>vat.epoeforked</li>
+  </loadAfter>
+</ModMetaData>

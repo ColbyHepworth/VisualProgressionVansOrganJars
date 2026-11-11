@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Natural organs are Van's jars up to the medieval age and the base game's organ box from the industrial age on. -->
+<Defs>
+
+  <!-- Heart -->
+  <ThingStyleDef>
+    <defName>VPOJ_Heart_Jar</defName>
+    <graphicData Class="VisualProgression.GraphicData_FromMod">
+      <texPath>Things/Item/BodyPart_Heart</texPath>
+      <fromMod>sirvan.organretexture</fromMod>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <VisualProgression.ItemLooksDef>
+    <defName>VPOJ_Heart</defName>
+    <item>Heart</item>
+    <looks>
+      <li><upToAge>Medieval</upToAge><style>VPOJ_Heart_Jar</style></li>
+    </looks>
+  </VisualProgression.ItemLooksDef>
+
+  <!-- Lung -->
+  <ThingStyleDef>
+    <defName>VPOJ_Lung_Jar</defName>
+    <graphicData Class="VisualProgression.GraphicData_FromMod">
+      <texPath>Things/Item/BodyPart_Lung</texPath>
+      <fromMod>sirvan.organretexture</fromMod>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <VisualProgression.ItemLooksDef>
+    <defName>VPOJ_Lung</defName>
+    <item>Lung</item>
+    <looks>
+      <li><upToAge>Medieval</upToAge><style>VPOJ_Lung_Jar</style></li>
+    </looks>
+  </VisualProgression.ItemLooksDef>
+
+  <!-- Kidney -->
+  <ThingStyleDef>
+    <defName>VPOJ_Kidney_Jar</defName>
+    <graphicData Class="VisualProgression.GraphicData_FromMod">
+      <texPath>Things/Item/BodyPart_Kidney</texPath>
+      <fromMod>sirvan.organretexture</fromMod>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <VisualProgression.ItemLooksDef>
+    <defName>VPOJ_Kidney</defName>
+    <item>Kidney</item>
+    <looks>
+      <li><upToAge>Medieval</upToAge><style>VPOJ_Kidney_Jar</style></li>
+    </looks>
+  </VisualProgression.ItemLooksDef>
+
+  <!-- Liver -->
+  <ThingStyleDef>
+    <defName>VPOJ_Liver_Jar</defName>
+    <graphicData Class="VisualProgression.GraphicData_FromMod">
+      <texPath>Things/Item/BodyPart_Liver</texPath>
+      <fromMod>sirvan.organretexture</fromMod>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <VisualProgression.ItemLooksDef>
+    <defName>VPOJ_Liver</defName>
+    <item>Liver</item>
+    <looks>
+      <li><upToAge>Medieval</upToAge><style>VPOJ_Liver_Jar</style></li>
+    </looks>
+  </VisualProgression.ItemLooksDef>
+
+  <!-- Expanded Prosthetics and Organ Engineering - Forked: stomach -->
+  <ThingStyleDef MayRequire="vat.epoeforked">
+    <defName>VPOJ_Stomach_Jar</defName>
+    <graphicData Class="VisualProgression.GraphicData_FromMod">
+      <texPath>Things/Item/BodyPart_Stomach</texPath>
+      <fromMod>sirvan.organretexture</fromMod>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <VisualProgression.ItemLooksDef MayRequire="vat.epoeforked">
+    <defName>VPOJ_Stomach</defName>
+    <item>Stomach</item>
+    <looks>
+      <li><upToAge>Medieval</upToAge><style>VPOJ_Stomach_Jar</style></li>
+    </looks>
+  </VisualProgression.ItemLooksDef>
+
+  <!-- Expanded Prosthetics and Organ Engineering - Forked: the other natural parts share Van's general jar -->
+  <ThingStyleDef MayRequire="vat.epoeforked">
+    <defName>VPOJ_General_Jar</defName>
+    <graphicData Class="VisualProgression.GraphicData_FromMod">
+      <texPath>Things/Item/BodyPart_General</texPath>
+      <fromMod>sirvan.organretexture</fromMod>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <VisualProgression.ItemLooksDef MayRequire="vat.epoeforked">
+    <defName>VPOJ_Eye</defName>
+    <item>Eye</item>
+    <looks>
+      <li><upToAge>Medieval</upToAge><style>VPOJ_General_Jar</style></li>
+    </looks>
+  </VisualProgression.ItemLooksDef>
+
+  <VisualProgression.ItemLooksDef MayRequire="vat.epoeforked">
+    <defName>VPOJ_Nose</defName>
+    <item>Nose</item>
+    <looks>
+      <li><upToAge>Medieval</upToAge><style>VPOJ_General_Jar</style></li>
+    </looks>
+  </VisualProgression.ItemLooksDef>
+
+  <VisualProgression.ItemLooksDef MayRequire="vat.epoeforked">
+    <defName>VPOJ_Ear</defName>
+    <item>Ear</item>
+    <looks>
+      <li><upToAge>Medieval</upToAge><style>VPOJ_General_Jar</style></li>
+    </looks>
+  </VisualProgression.ItemLooksDef>
+
+  <VisualProgression.ItemLooksDef MayRequire="vat.epoeforked">
+    <defName>VPOJ_Jaw</defName>
+    <item>Jaw</item>
+    <looks>
+      <li><upToAge>Medieval</upToAge><style>VPOJ_General_Jar</style></li>
+    </looks>
+  </VisualProgression.ItemLooksDef>
+
+  <VisualProgression.ItemLooksDef MayRequire="vat.epoeforked">
+    <defName>VPOJ_Arm</defName>
+    <item>Arm</item>
+    <looks>
+      <li><upToAge>Medieval</upToAge><style>VPOJ_General_Jar</style></li>
+    </looks>
+  </VisualProgression.ItemLooksDef>
+
+  <VisualProgression.ItemLooksDef MayRequire="vat.epoeforked">
+    <defName>VPOJ_Leg</defName>
+    <item>Leg</item>
+    <looks>
+      <li><upToAge>Medieval</upToAge><style>VPOJ_General_Jar</style></li>
+    </looks>
+  </VisualProgression.ItemLooksDef>
+
+</Defs>

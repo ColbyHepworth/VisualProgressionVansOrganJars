@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Organs' normal art is the base game's box, or a retexture of it, so organs no one made never show Van's jars. -->
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Heart"]/graphicData</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Heart"]/graphicData</xpath>
+      <value>
+        <graphicData Class="VisualProgression.GraphicData_FromMod">
+          <texPath>Things/Item/Health/HealthItem</texPath>
+          <skipMods>
+            <li>sirvan.organretexture</li>
+          </skipMods>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>0.80</drawSize>
+          <color>(190,190,190)</color>
+        </graphicData>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Heart"]</xpath>
+      <value>
+        <graphicData Class="VisualProgression.GraphicData_FromMod">
+          <texPath>Things/Item/Health/HealthItem</texPath>
+          <skipMods>
+            <li>sirvan.organretexture</li>
+          </skipMods>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>0.80</drawSize>
+          <color>(190,190,190)</color>
+        </graphicData>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Lung"]/graphicData</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Lung"]/graphicData</xpath>
+      <value>
+        <graphicData Class="VisualProgression.GraphicData_FromMod">
+          <texPath>Things/Item/Health/HealthItem</texPath>
+          <skipMods>
+            <li>sirvan.organretexture</li>
+          </skipMods>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>0.80</drawSize>
+          <color>(190,190,190)</color>
+        </graphicData>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Lung"]</xpath>
+      <value>
+        <graphicData Class="VisualProgression.GraphicData_FromMod">
+          <texPath>Things/Item/Health/HealthItem</texPath>
+          <skipMods>
+            <li>sirvan.organretexture</li>
+          </skipMods>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>0.80</drawSize>
+          <color>(190,190,190)</color>
+        </graphicData>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Kidney"]/graphicData</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Kidney"]/graphicData</xpath>
+      <value>
+        <graphicData Class="VisualProgression.GraphicData_FromMod">
+          <texPath>Things/Item/Health/HealthItem</texPath>
+          <skipMods>
+            <li>sirvan.organretexture</li>
+          </skipMods>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>0.80</drawSize>
+          <color>(190,190,190)</color>
+        </graphicData>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Kidney"]</xpath>
+      <value>
+        <graphicData Class="VisualProgression.GraphicData_FromMod">
+          <texPath>Things/Item/Health/HealthItem</texPath>
+          <skipMods>
+            <li>sirvan.organretexture</li>
+          </skipMods>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>0.80</drawSize>
+          <color>(190,190,190)</color>
+        </graphicData>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Liver"]/graphicData</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Liver"]/graphicData</xpath>
+      <value>
+        <graphicData Class="VisualProgression.GraphicData_FromMod">
+          <texPath>Things/Item/Health/HealthItem</texPath>
+          <skipMods>
+            <li>sirvan.organretexture</li>
+          </skipMods>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>0.80</drawSize>
+          <color>(190,190,190)</color>
+        </graphicData>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Liver"]</xpath>
+      <value>
+        <graphicData Class="VisualProgression.GraphicData_FromMod">
+          <texPath>Things/Item/Health/HealthItem</texPath>
+          <skipMods>
+            <li>sirvan.organretexture</li>
+          </skipMods>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>0.80</drawSize>
+          <color>(190,190,190)</color>
+        </graphicData>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <!-- Expanded Prosthetics and Organ Engineering - Forked -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional" MayRequire="vat.epoeforked">
+        <xpath>Defs/ThingDef[defName="Stomach"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Stomach"]/graphicData</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Stomach"]</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional" MayRequire="vat.epoeforked">
+        <xpath>Defs/ThingDef[defName="Eye"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Eye"]/graphicData</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Eye"]</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional" MayRequire="vat.epoeforked">
+        <xpath>Defs/ThingDef[defName="Nose"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Nose"]/graphicData</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Nose"]</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional" MayRequire="vat.epoeforked">
+        <xpath>Defs/ThingDef[defName="Ear"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Ear"]/graphicData</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Ear"]</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional" MayRequire="vat.epoeforked">
+        <xpath>Defs/ThingDef[defName="Jaw"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Jaw"]/graphicData</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Jaw"]</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional" MayRequire="vat.epoeforked">
+        <xpath>Defs/ThingDef[defName="Arm"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Arm"]/graphicData</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Arm"]</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional" MayRequire="vat.epoeforked">
+        <xpath>Defs/ThingDef[defName="Leg"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Leg"]/graphicData</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Leg"]</xpath>
+          <value>
+            <graphicData Class="VisualProgression.GraphicData_FromMod">
+              <texPath>Things/Item/Health/HealthItem</texPath>
+              <skipMods>
+                <li>sirvan.organretexture</li>
+              </skipMods>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+              <color>(190,190,190)</color>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+
+</Patch>
