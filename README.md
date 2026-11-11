@@ -7,6 +7,8 @@ game's organ box shows wherever the box does. With Expanded Prosthetics and Orga
 eyes, noses, ears and jaws change the same way. Its arms and legs can't be harvested, so they look like any organ you
 didn't harvest.
 
+[Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3838085030)
+
 Something has to raise your colony's tech level as you play, such as Vanilla Factions Expanded - Tribals. Without one,
 your colony stays at the age it starts in, so its organs never change.
 
